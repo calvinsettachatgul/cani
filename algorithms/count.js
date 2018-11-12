@@ -1,6 +1,4 @@
-
 function count(arr){
-    
     if (arr === null){
         return 0;
     }

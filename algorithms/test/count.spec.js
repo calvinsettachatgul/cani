@@ -1,9 +1,6 @@
 var assert = require('assert');
 var chai = require('chai');
-
 let count = require('../count');
-
-console.log(count);
 
 // write a spec that verifies count will sum all the elements of an array and return the sum
 describe('#count', function() {
@@ -14,7 +11,7 @@ describe('#count', function() {
     })
     context('when [] is an argument', function(){
         it('should return 0', function(){
-            assert.equal(count([]), 0, "the function was passed null")
+            assert.equal(count([]), 0, "the function was passed empty array")
         })
     })
     it('should return sum of the array elements', function(){
