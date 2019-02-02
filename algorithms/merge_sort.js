@@ -21,6 +21,9 @@ merge([1, 3], [4, 5]);
 
 
 function mergeSort(arr) {
+  if (arr.length === 0){
+    return arr;
+  }
   if (arr.length === 1) {
     return arr;
   }
@@ -29,3 +32,5 @@ function mergeSort(arr) {
   const right = arr.slice(middle);
   return merge(mergeSort(left), mergeSort(right));
 }
+
+module.exports = mergeSort;
